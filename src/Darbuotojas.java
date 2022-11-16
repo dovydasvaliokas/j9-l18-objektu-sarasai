@@ -22,6 +22,14 @@ public class Darbuotojas {
     }
 
     //---Klasės funkcijos
+    public double apskaiciuotiBonusa() {
+        if (alga < 1000) {
+            return 100;
+        }
+        else {
+            return 200;
+        }
+    }
 
     // Getteriai ir setteriai
     public String getVardas() {
@@ -60,7 +68,7 @@ public class Darbuotojas {
         return grafikoDienos;
     }
 
-    public void setGrafikoDienos(ArrayList<String> grafikoDienos) {
+    public void setGrafikoDienos(List<String> grafikoDienos) {
         this.grafikoDienos = grafikoDienos;
     }
 
